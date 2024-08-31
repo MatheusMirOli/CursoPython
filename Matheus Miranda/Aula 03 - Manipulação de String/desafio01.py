@@ -1,0 +1,11 @@
+#DESAFIO 01
+nome = input('Insira seu nome:')
+nomeMaisculo = nome.upper()
+nomeMinusculo = nome.lower()
+nomeSemEspaco = nome.replace(' ','')
+splitNome = nome.split()
+letrasPrimeiroNome = len(splitNome[0])
+print(f'Nome com todas as letras maiúsculas: {nomeMaisculo}')
+print(f'Nome com todas as letras minúsculas: {nomeMinusculo}')
+print(f'O nome {nome} tem {len(nomeSemEspaco)} letras ao todo')
+print(f'O primero nome do nome {nome} tem {letrasPrimeiroNome} letras')
