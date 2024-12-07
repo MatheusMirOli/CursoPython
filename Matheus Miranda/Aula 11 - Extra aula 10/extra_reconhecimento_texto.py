@@ -18,11 +18,11 @@ lista_moradores=["Marcos - Gol - OTM 2022", "Alex - Palio - FB1 55517", "Gabriel
 pytesseract.pytesseract.tesseract_cmd=r'C:\Users\Aluno\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 
 #Inserindo a imagem em uma variável
-meu_livro = cv2.imread("gato_pepeu.jpg",0)
-meu_livro2 = cv2.imread("livro.jpg",0)
+# meu_livro = cv2.imread("gato_pepeu.jpg",0)
+# meu_livro2 = cv2.imread("livro.jpg",0)
 placa = cv2.imread("placa.png",0)
-placa_2 = cv2.imread("placa_2.jpg",0)
-placa_3 = cv2.imread("placa_3.jpg",0)
+# placa_2 = cv2.imread("placa_2.jpg",0)
+# placa_3 = cv2.imread("placa_3.jpg",0)
 
 #Exibir a imagem
 #cv2.imshow("img",meu_livro)
@@ -34,6 +34,7 @@ cv2.imshow("img3",placa)
 #Extrair o texto da imagem
 #texto_capturado1 = pytesseract.image_to_string(placa, config='-l eng --oem 3 --psm 12')
 #texto_capturado2 = pytesseract.image_to_string(placa_2, config='-l eng --oem 3 --psm 12')
+
 placa_lida = pytesseract.image_to_string(placa, config='-l eng --oem 3 --psm 12')
 
 #print(texto_capturado1)
